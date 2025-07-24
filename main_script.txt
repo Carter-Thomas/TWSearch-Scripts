@@ -1,1 +1,1 @@
-./build/bin/twsearch -M 2048 --noedges --alloptimal --mindepth 12 --moves 2L,L,F,R,U,2R,3L,3R samples/main/7x7x7.tws samples/main/7x7L2C.scr
+./build/bin/twsearch -M 16000 --noedges --alloptimal --microthreads 4 --startprunedepth 4 --mindepth 7 --maxdepth 17 --nowrite --nocorners --moves 2L,L,F,R,U,2R,3L,3R samples/main/7x7x7.tws samples/main/7x7L2C.scr
