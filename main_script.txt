@@ -1,0 +1,1 @@
+./build/bin/twsearch -M 2048 --noedges --alloptimal  --moves 2L,L,F,R,U,2R,3L,3R samples/main/7x7x7.tws samples/main/7x7L2C.scr
