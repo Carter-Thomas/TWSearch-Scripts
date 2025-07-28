@@ -2,3 +2,8 @@ cd ~/twsearch1/samples/main
 nano 7x7L2C.scr
 cd ~/twsearch1
 ./build/bin/twsearch -M 16000 --noedges --alloptimal --microthreads 4 --startprunedepth 4 --mindepth 7 --maxdepth 17 --nowrite --nocorners --moves 2L,L,F,R,U,2R,3L,3R samples/main/7x7x7.tws samples/main/7x7L2C.scr
+
+cd ~/Desktop/twsearch1/samples/main
+nano 7x7L2C.scr
+cd ~/Desktop/twearch1
+./build/bin/twsearch -M 16000 --noedges --alloptimal --microthreads 4 --startprunedepth 4 --mindepth 7 --maxdepth 17 --nowrite --nocorners --moves 2L,L,F,R,U,2R,3L,3R samples/main/7x7x7.tws samples/main/7x7L2C.scr
