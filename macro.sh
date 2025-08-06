@@ -1,0 +1,29 @@
+xdotool mousemove 246 156
+xdotool click 1
+xdotool mousemove 290 443
+xdotool click 1
+xdotool mousemove 641 454
+xdotool click 1
+sleep 1.5
+xdotool mousemove 515 690
+xdotool click 1
+xdotool key Return
+sleep 0.5
+xdotool key Return
+xdotool mousemove 175 1058
+xdotool click 1
+cd ~/Desktop/twsearch1/samples/main
+nano 7x7L2C.scr
+xinput test 11 | while read line; do
+    # Ctrl press
+    if [[ $line == "key press   37" ]]; then ctrl=1; fi
+    # Ctrl release
+    if [[ $line == "key release 37" ]]; then ctrl=0; fi
+    # X pressed while Ctrl is held
+    if [[ $line == "key press   53" && $ctrl -eq 1 ]]; then
+        echo "Ctrl+X detected!"
+        break
+    fi
+done
+cd ~/Desktop/twsearch1
+./build/bin/twsearch -M 1500 --noedges --alloptimal --microthreads 4 --startprunedepth 4 --mindepth 7 --maxdepth 17 --nowrite --nocorners --moves 2L,L,F,R,U,2R,3L,3R samples/main/7x7x7.tws samples/main/7x7L2C.scr
