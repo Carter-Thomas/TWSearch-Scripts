@@ -41,6 +41,7 @@ xdotool click 1
 xdotool key Return
 sleep 0.5
 xdotool key Return
+sleep 2
 xdotool key tab
 xdotool key ctrl+v
 xdotool mousemove 175 1058
