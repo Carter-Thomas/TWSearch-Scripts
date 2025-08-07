@@ -21,7 +21,7 @@ xdotool key Tab
 xdotool key Return 
 xdotool sleep 0.25
 xdotool mousemove 1672 398
-xdotool click 2
+xdotool click 3
 xdotool sleep 0.25
 xdotool mousemove 1687 728
 xdotool click 1
