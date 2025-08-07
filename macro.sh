@@ -1,4 +1,4 @@
-xdotool mousemove 1905 325
+xdotool mousemove 1479 328
 xdotool click 1
 xdotool key ctrl+a
 xdotool key ctrl+c
