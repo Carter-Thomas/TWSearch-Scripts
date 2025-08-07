@@ -36,12 +36,12 @@ xdotool mousemove 641 454
 xdotool click 1
 sleep 1.5
 xdotool mousemove 515 690
-sleep 2.5
+sleep 1.5
 xdotool click 1
 xdotool key Return
 sleep 0.5
 xdotool key Return
-sleep 2
+sleep 3
 xdotool key tab
 xdotool key ctrl+v
 xdotool mousemove 175 1058
