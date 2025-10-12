@@ -10,3 +10,6 @@ cd ~/Desktop/twsearch1
 
 cd ~/twsearch1
 ./build/bin/twsearch -M 16000 --alloptimal --microthreads 16 --startprunedepth 5 --mindepth 15 --maxdepth 20 --nowrite --nocorners --moves 2D,2U,R,L,U,F samples/main/5x5x5.tws samples/main/5x5L3E.scr
+
+cd ~/twsearch1
+./build/bin/twsearch -M 12000 --alloptimal --microthreads 16 --startprunedepth 5 --mindepth 15 --maxdepth 20 --nowrite --nocorners --moves 3Uw,2Uw,3Dw,2Dw,U,F samples/main/7x7x7.tws samples/main/7x7L2E.scr
