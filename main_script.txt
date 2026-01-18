@@ -18,3 +18,11 @@ cd ~/Desktop/twsearch1/samples/main
 nano 6x6L2E.scr
 cd ~/Desktop/twsearch1
 ./build/bin/twsearch -M 1500 --alloptimal --microthreads 4 --startprunedepth 4 --mindepth 7 --maxdepth 17 --nowrite --nocorners --moves 3U,2U,U,F,R samples/main/6x6x6.tws samples/main/6x6L2E.scr
+
+#First Center
+
+./build/bin/twsearch -M 16000 --alloptimal --microthreads 16 --startprunedepth 5 --maxdepth 20 --nowrite --noedges --nocorners --moves Rw,R,Lw,L,Uw,U,Dw,D,Fw,F,Bw,B samples/main/5x5x5FirstCenter.tws samples/main/5x5x5FirstCenter.scr
+
+./build/bin/twsearch -M 16000 --alloptimal --microthreads 4 --startprunedepth 4 --mindepth 7 --maxdepth 17 --nowrite --nocorners --noedges --moves 2L,L,F,R,U,2R,3L,3R samples/main/7x7x7FirstCenter.tws samples/main/7x7x7FirstCenter.scr
+
+./build/bin/twsearch -M 16000 --describesets samples/main/7x7x7.tws
