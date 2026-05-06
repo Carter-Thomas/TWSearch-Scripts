@@ -29,3 +29,10 @@ cd ~/Desktop/twsearch1
 
 python3 scramble_to_scr.py "scramble" -o samples/main/5x5FirstCenter.scr
 Then: ./build/bin/twsearch -M 13000 --alloptimal --microthreads 16 --startprunedepth 5 --maxdepth 20 --nowrite --noedges --nocorners --moves Rw,R,Lw,L,Uw,U,Dw,D,Fw,F,Bw,B samples/main/5x5FirstCenter.tws samples/main/5x5FirstCenter.scr
+
+python3 scramble_to_scr.py "scramble" -o samples/main/5x5FirstTwoCenters.scr
+Then: ./build/bin/twsearch -M 13000 --alloptimal --microthreads 16 --startprunedepth 5 --maxdepth 20 --nowrite --noedges --nocorners --moves Rw,R,Lw,L,Uw,U,Dw,D,Fw,F,Bw,B samples/main/5x5FirstTwoCenters.tws samples/main/5x5FirstTwoCenters.scr
+
+ok code stuff:
+
+https://alg.cubing.net/?setup=Fw2_Bw_B-_Lw2_Bw2_Lw-_Uw-_Lw-_Uw_Lw2_L-_Fw-_B-_Uw2_F2_Dw2_D_F-_D2_L2_Bw2_Fw-_L2_R_Bw2_D2_R2_D2_R-_Fw_R-_B2_R_Rw-_Dw_Fw2_Uw2_U_D-_B_L_Lw2_Rw_Uw_Lw_D_Bw_Fw_B_Rw2_B-_R2_Rw-_F_Fw_Rw-_U-_Rw_U2&puzzle=5x5x5&alg=B_Bw_Rw_Uw2_F_U-_Fw2_Bw-_Rw2_F_Bw2_Rw2_D-_Lw_%2F%2FF2C_(Robot)%0AU-_B_U2_L-_Dw-_B_Uw_L2_F_D-_L2_Uw-_L-_%2F%2FF3E_(Robot)%0A%2F%2FDw_B_U-_L-_Uw-_F-_Uw-_R_Uw-_Dw-_B-_Uw_Dw2_U-_%2F%2FGreen_(human_solution)%0A%2F%2FDw_B_U-_L-_Uw-_F_U-_R_Dw-_Uw-_B-_Dw2_%2F%2FGreen_(Robot,_12)%0A%2F%2FB_Uw2_L_F-_U2_B_Dw_Uw_R_F-_Dw2_R_Uw-_%2F%2FRed_(Robot,_13)%0A%2F%2FUw2_F_Uw2_B-_U2_Uw_L-_U-_Dw-_Uw2_B_Dw-_%2F%2FBlue_(Robot,_12)%0A%2F%2FR2_U_F2_Dw_F-_Dw2_R_U_L_Uw2_B_Dw_R2_%2F%2FOrange_(Robot,_13)%0A
